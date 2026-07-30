@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XITEXE INFO API · Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="brand">
+            <i class="fa-solid fa-code"></i> XITEXE INFO API <span class="sub-dash">dashboard</span>
+        </div>
+        <div class="top-actions">
+            <button id="theme-toggle" class="icon-btn"><i class="fa-solid fa-moon"></i></button>
+            <button id="refresh-btn" class="icon-btn"><i class="fa-solid fa-rotate"></i></button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="card glass">
+            <div class="card-header">
+                <h1>XITEXE INFO API</h1>
+                <p class="subtitle">Professional Free Fire Dashboard</p>
+                <p class="affiliation"><i class="fa-solid fa-code-branch"></i> Affiliated with Dev Xitexe</p>
+            </div>
+
+            <!-- Search Form -->
+            <div class="form-group">
+                <input type="text" id="uid-input" placeholder="Enter Player UID" autocomplete="off">
+            </div>
+
+            <div class="form-row">
+                <div class="select-wrapper">
+                    <i class="fa-solid fa-globe globe-icon"></i>
+                    <select id="region-input">
+                        <option value="Middle East">Middle East</option>
+                        <option value="India">India</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="United States">United States</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="South America">South America</option>
+                    </select>
+                </div>
+                <button id="search-btn" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+            </div>
+
+            <a href="https://whatsapp.com" target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> Join WhatsApp Channel
+            </a>
+        </div>
+
+        <!-- Result / Error Container -->
+        <div id="result-container" class="results-wrapper hidden">
+            <!-- Dynamically populated sections -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
